@@ -33,7 +33,7 @@ This demonstration shows how to properly initialize the API and authenticate a u
 ## DONOT ALTER THE NAME OF LIB ELSE WONT WORK
 
 
-To Read License fromtext file :
+To Read License from text file :
 
 ```bash
 std::string  ReadLisence(){
