@@ -29,7 +29,9 @@ Below are detailed demonstrations showcasing the current functionalities of `Lib
 This demonstration shows how to properly initialize the API and authenticate a user by verifying their license key. This process is crucial for securing access and ensuring that only licensed users can utilize your application.
 
 
-## Usage
+## USE THE CODES INTO YOUR C++ SHARED LIBRRARY PROJECT 
+
+- [ source That you can use to build ](https://github.com/LGLTeam/Android-Mod-Menu)
 ## DONOT ALTER THE NAME OF LIB ELSE WONT WORK
 
 
