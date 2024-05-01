@@ -142,6 +142,9 @@ Initiate it inside Main Thread :
 pthread_create(&t, 0, test_thread, 0);
 ```
 
+## OUTPUT
+![](https://ibb.co/Cz1ZX7y)
+
 ## Prerequisites
 
 - A modern C++ compiler (C++11 or later)
