@@ -30,6 +30,7 @@ This demonstration shows how to properly initialize the API and authenticate a u
 
 
 ## Usage
+## DONOT ALTER THE NAME OF LIB ELSE WONT WORK
 
 Required Functions:
 
@@ -91,12 +92,12 @@ void *test_thread(void *) {
     dlerror();
 
 
-    isKeyauthInitorg = (int (*)(std::string, std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1350);
-    KeyauthLicense = (std::string (*)(std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1368);
-    KeyauthFetchonline = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF13A8);
-    KeyuathFetchStats = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF13C4);
-    KeyauthGetVar = (std::string (*)(std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF13E0);
-    SendDataToDiscord = (std::string (*)(std::string,std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1400);
+    isKeyauthInitorg = (int (*)(std::string, std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1420);
+    KeyauthLicense = (std::string (*)(std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1438);
+    KeyauthFetchonline = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF1478);
+    KeyuathFetchStats = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF1494);
+    KeyauthGetVar = (std::string (*)(std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14B0);
+    SendDataToDiscord = (std::string (*)(std::string,std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14D0);
     if(isKeyauthInitorg){
         bool isexecuted = isKeyauthInitorg("habibilib","rpsTyrvB6V","https://keyauth.win/api/1.2/");
         if(isexecuted){
