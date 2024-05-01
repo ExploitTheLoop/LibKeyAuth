@@ -32,6 +32,24 @@ This demonstration shows how to properly initialize the API and authenticate a u
 ## Usage
 ## DONOT ALTER THE NAME OF LIB ELSE WONT WORK
 
+
+To Read License fromtext file :
+
+```bash
+std::string  ReadLisence(){
+    std::ifstream file("/storage/emulated/0/Android/data/"+app_package_name+"/.userkey");
+    std::string str;
+    std::string file_contents;
+    while (std::getline(file, str))
+    {
+        file_contents += str;
+        // file_contents.push_back('\n');
+    }
+    return file_contents;
+
+}
+```
+
 Required Functions:
 
 ```bash
