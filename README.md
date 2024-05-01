@@ -143,7 +143,7 @@ pthread_create(&t, 0, test_thread, 0);
 ```
 
 ## OUTPUT
-![](https://ibb.co/Cz1ZX7y)
+![](https://freeimage.host/i/JgOnfna)
 
 ## Prerequisites
 
