@@ -99,7 +99,7 @@ void *test_thread(void *) {
     KeyauthGetVar = (std::string (*)(std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14B0);
     SendDataToDiscord = (std::string (*)(std::string,std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14D0);
     if(isKeyauthInitorg){
-        bool isexecuted = isKeyauthInitorg("habibilib","rpsTyrvB6V","https://keyauth.win/api/1.2/");
+        bool isexecuted = isKeyauthInitorg("yourname","yourownerid","https://keyauth.win/api/1.2/");
         if(isexecuted){
             LOGI("keyauth initialized");
 
