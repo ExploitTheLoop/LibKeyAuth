@@ -143,7 +143,7 @@ pthread_create(&t, 0, test_thread, 0);
 ```
 
 ## OUTPUT
-![](https://freeimage.host/i/JgOnfna)
+![](Untitled.png)
 
 ## Prerequisites
 
