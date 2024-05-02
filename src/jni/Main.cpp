@@ -91,12 +91,24 @@ void *test_thread(void *) {
     LOGI("key %s",key.c_str());
     LOGI("hwid %s",generateHWID().c_str());
 
+ #if defined(__aarch64__) //To compile this code for arm64 lib only. Do not worry about greyed out highlighting code, it
+
+    isKeyauthInitorg = (int (*)(std::string, std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0x15AA4C);
+    KeyauthLicense = (std::string (*)(std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0x15AA64);
+    KeyauthFetchonline = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0x15AAA8);
+    KeyuathFetchStats = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0x15AAB4);
+    KeyauthGetVar = (std::string (*)(std::string)) getAbsoluteAddress("libkeyauthclient.so", 0x15AAC0);
+    SendDataToDiscord = (std::string (*)(std::string,std::string)) getAbsoluteAddress("libkeyauthclient.so", 0x15AAD0);
+
+#else
     isKeyauthInitorg = (int (*)(std::string, std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1420);
     KeyauthLicense = (std::string (*)(std::string, std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF1438);
     KeyauthFetchonline = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF1478);
     KeyuathFetchStats = (std::string (*)()) getAbsoluteAddress("libkeyauthclient.so", 0xF1494);
     KeyauthGetVar = (std::string (*)(std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14B0);
     SendDataToDiscord = (std::string (*)(std::string,std::string)) getAbsoluteAddress("libkeyauthclient.so", 0xF14D0);
+#endif
+    
     if(isKeyauthInitorg){
         bool isexecuted = isKeyauthInitorg("yourname","yourownerid","https://keyauth.win/api/1.2/");
         if(isexecuted){
