@@ -89,7 +89,7 @@ API Function declaration:
 ```bash
 
 int (*isKeyauthInitorg)(std::string name, std::string ownerid, std::string apiurl);
-std::string (*KeyauthLicense)(std::string, std::string);
+std::string (*KeyauthLicense)(std::string key, std::string hwid);
 std::string (*KeyauthFetchonline)();
 std::string (*KeyuathFetchStats)();
 std::string (*KeyauthGetVar)(std::string variable); //doesnt need removedoubleqoutes
