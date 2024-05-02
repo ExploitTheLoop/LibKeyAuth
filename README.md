@@ -32,7 +32,7 @@ This demonstration shows how to properly initialize the API and authenticate a u
 ## USE THE CODES INTO YOUR C++ SHARED LIBRRARY PROJECT 
 
 - [ source That you can use to build ](https://github.com/LGLTeam/Android-Mod-Menu)
-## DONOT ALTER THE NAME OF LIB ELSE WONT WORK
+## DO NOT ALTER THE NAME OF LIB ELSE WONT WORK
 
 
 To Read License from text file :
