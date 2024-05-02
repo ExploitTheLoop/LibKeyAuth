@@ -6,7 +6,9 @@ LibKeyAuthClient is a C++ shared library designed to streamline integration with
 
 This project loads a shared library called LibKeyAuthClient.so into memory using dlopen, through which we import a suite of KeyAuth API functions. These functions allow us to verify licenses, monitor online sessions, access global variables, gather statistics, and more. We are committed to continuously expanding the library's capabilities. Make sure to follow this repository to stay updated with new features and enhancements!
 
-
+## ARCHITECTURAL SUPPORT
+- armeabi-v7a
+- arm64-v8a
 
 ## Features
 
